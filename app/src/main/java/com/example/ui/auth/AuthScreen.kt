@@ -92,13 +92,13 @@ fun AuthScreen(
 
                 Spacer(modifier = Modifier.height(24.dp))
 
-                // Main Interactive Form Card (Style with 28.dp rounded geometric corners)
+                // Main Interactive Form Card (Style with 8.dp rounded corners)
                 Card(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .border(1.dp, Color(0xFF79747E).copy(alpha = 0.4f), RoundedCornerShape(28.dp)),
+                        .border(1.dp, Color(0xFFCBD5E1).copy(alpha = 0.5f), RoundedCornerShape(8.dp)),
                     colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface.copy(alpha = 0.95f)),
-                    shape = RoundedCornerShape(28.dp),
+                    shape = RoundedCornerShape(8.dp),
                     elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
                 ) {
                     Column(
@@ -155,10 +155,10 @@ fun AuthScreen(
                                 placeholder = { Text("9876543210") },
                                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
                                 modifier = Modifier.fillMaxWidth(),
-                                shape = RoundedCornerShape(12.dp),
+                                shape = RoundedCornerShape(8.dp),
                                 colors = OutlinedTextFieldDefaults.colors(
                                     focusedBorderColor = NavyPrimary,
-                                    unfocusedBorderColor = Color(0xFF79747E)
+                                    unfocusedBorderColor = Color(0xFFCBD5E1)
                                 )
                             )
 
@@ -169,7 +169,7 @@ fun AuthScreen(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .height(54.dp),
-                                shape = RoundedCornerShape(28.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = ButtonDefaults.buttonColors(containerColor = NavyPrimary)
                             ) {
                                 if (authState is AuthState.Loading) {
@@ -190,10 +190,10 @@ fun AuthScreen(
                                 placeholder = { Text("123456") },
                                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                                 modifier = Modifier.fillMaxWidth(),
-                                shape = RoundedCornerShape(12.dp),
+                                shape = RoundedCornerShape(8.dp),
                                 colors = OutlinedTextFieldDefaults.colors(
                                     focusedBorderColor = OrangeAccent,
-                                    unfocusedBorderColor = Color(0xFF79747E)
+                                    unfocusedBorderColor = Color(0xFFCBD5E1)
                                 )
                             )
 
@@ -204,7 +204,7 @@ fun AuthScreen(
                                 modifier = Modifier
                                     .fillMaxWidth()
                                     .height(54.dp),
-                                shape = RoundedCornerShape(28.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = ButtonDefaults.buttonColors(containerColor = OrangeAccent)
                             ) {
                                 if (authState is AuthState.Loading) {
@@ -227,8 +227,8 @@ fun AuthScreen(
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(54.dp),
-                            shape = RoundedCornerShape(28.dp),
-                            border = BorderStroke(1.dp, Color(0xFF79747E))
+                            shape = RoundedCornerShape(20.dp),
+                            border = BorderStroke(1.dp, Color(0xFFCBD5E1))
                         ) {
                             Icon(
                                 imageVector = Icons.Default.AccountBox,
@@ -298,8 +298,8 @@ fun AuthScreen(
                                 modifier = Modifier
                                     .weight(1f)
                                     .height(54.dp),
-                                shape = RoundedCornerShape(28.dp),
-                                border = BorderStroke(1.dp, Color(0xFF79747E))
+                                shape = RoundedCornerShape(20.dp),
+                                border = BorderStroke(1.dp, Color(0xFFCBD5E1))
                             ) {
                                 Text("BACK", fontWeight = FontWeight.Bold, letterSpacing = 0.5.sp)
                             }
@@ -315,7 +315,7 @@ fun AuthScreen(
                                 modifier = Modifier
                                     .weight(1.5f)
                                     .height(54.dp),
-                                shape = RoundedCornerShape(28.dp),
+                                shape = RoundedCornerShape(20.dp),
                                 colors = ButtonDefaults.buttonColors(containerColor = NavyPrimary)
                             ) {
                                 Text("SIGN IN", fontWeight = FontWeight.Bold, letterSpacing = 0.5.sp)

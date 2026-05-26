@@ -2,19 +2,18 @@ package com.example.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// AbhiyantriSetu Brand Colors aligned with Geometric Balance Theme
-val NavyPrimary = Color(0xFF6750A4)       // Deep vibrant primary purple
-val OrangeAccent = Color(0xFFEA4335)      // Modern striking coral/red accent
-val TealSuccess = Color(0xFF34A853)       // Clean green for success and positive indicators
-val LightBackground = Color(0xFFFEF7FF)   // Warm soft lavender-pink background
-val DarkNavyPrimary = Color(0xFF21005D)   // High-intensity indigo-purple details
-val DarkBackground = Color(0xFF1C1B1F)    // Cozy dark theme background
-val DarkSurface = Color(0xFF2C2A31)       // Premium dark surface item
+// AbhiyantriSetu Brand Colors aligned with requested specs
+val NavyPrimary = Color(0xFF1A3A5C)       // Headers, nav, CTA buttons, trust elements
+val OrangeAccent = Color(0xFFF97316)      // Highlights, badges, active states, Setu branding
+val TealSuccess = Color(0xFF1D9E75)       // Verified badges, payment success, completed milestones
+val LightBackground = Color(0xFFF8F9FA)   // Page backgrounds, secondary surfaces
+val DarkNavyPrimary = Color(0xFF0F2236)   // Extrapolated dark primary
+val DarkBackground = Color(0xFF121212)    // Standard dark background
+val DarkSurface = Color(0xFF1E1E1E)       // Standard dark surface
 
 // Theme Tones
-val NavyLight = Color(0xFFF3EDF7)         // Soft lavender secondary container / card container
-val NavyOnPrimary = Color(0xFFFFFFFF)     // High-contrast clean white on primary
-val OrangeOnAccent = Color(0xFFFFFFFF)    // High-contrast clean white on accent
-val CharcoalDark = Color(0xFF1D1B20)      // Deep charcoal black text and high contrast borders
-val GrayBorder = Color(0xFF79747E)        // Outline borders and subtle grid dividers
-
+val NavyLight = Color(0xFFE2EAF1)         // Light Tint soft navy
+val NavyOnPrimary = Color(0xFFFFFFFF)     // High-contrast primary text/foreground
+val OrangeOnAccent = Color(0xFFFFFFFF)    // High-contrast accent text/foreground
+val CharcoalDark = Color(0xFF1E293B)      // Clean dark charcoal gray text
+val GrayBorder = Color(0xFFCBD5E1)        // Gentle outline gray border

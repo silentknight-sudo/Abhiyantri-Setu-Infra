@@ -113,7 +113,7 @@ fun HomeownerDashboard(
                     .fillMaxWidth()
                     .padding(12.dp),
                 colors = CardDefaults.cardColors(containerColor = NavyPrimary),
-                shape = RoundedCornerShape(12.dp)
+                shape = RoundedCornerShape(8.dp)
             ) {
                 Row(
                     modifier = Modifier.padding(14.dp),
